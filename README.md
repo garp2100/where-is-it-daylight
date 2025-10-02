@@ -88,6 +88,12 @@ Works on all modern browsers:
 - Safari (latest)
 - Mobile browsers
 
+## Credits
+
+This site and all its contents were created with [Claude](https://claude.ai).
+
+**Original prompt:** "can you make me a site that given my time, would tell me where in the world it is day or night"
+
 ## License
 
 MIT License - Feel free to use and modify!

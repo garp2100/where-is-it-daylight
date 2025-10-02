@@ -161,11 +161,8 @@ body {
 }
 
 .credits p {
-    margin-bottom: 5px;
-}
-
-.credits p:last-child {
-    margin-bottom: 0;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .credits a {
@@ -176,13 +173,6 @@ body {
 
 .credits a:hover {
     color: #7AB8FF;
-}
-
-.credits .prompt {
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 12px;
-    margin-top: 8px;
 }
 
 /* Responsive Design */

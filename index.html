@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where Is It Daylight?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- User Info Section -->
+        <div class="user-info" id="userInfo">
+            <div class="user-info-overlay">
+                <h2>Your Location</h2>
+                <div class="location-details">
+                    <p class="city" id="userCity">Detecting location...</p>
+                    <p class="time" id="userTime">--:--</p>
+                    <p class="timezone" id="userTimezone">--</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Display Section -->
+        <div class="main-display" id="mainDisplay">
+            <div class="overlay">
+                <div class="content">
+                    <h1 id="displayTitle">Finding where it's daytime...</h1>
+                    <div class="destination-info">
+                        <p class="destination-city" id="destinationCity">--</p>
+                        <p class="destination-time" id="destinationTime">--:--</p>
+                        <p class="destination-timezone" id="destinationTimezone">--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div class="status" id="status"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

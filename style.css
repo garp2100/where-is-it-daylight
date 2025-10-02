@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* User Info Section */
+.user-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 350px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.user-info-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    position: relative;
+    min-height: 200px;
+}
+
+.user-info h2 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+}
+
+.location-details .city {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.location-details .time {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.location-details .timezone {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Main Display Section */
+.main-display {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    padding: 40px;
+}
+
+#displayTitle {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    letter-spacing: -1px;
+}
+
+.destination-info {
+    margin-top: 20px;
+}
+
+.destination-city {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 25px rgba(0, 0, 0, 0.7);
+    letter-spacing: -2px;
+}
+
+.destination-time {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.destination-timezone {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Status Message */
+.status {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.status.show {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-info {
+        top: 10px;
+        left: 10px;
+        padding: 15px 20px;
+        max-width: calc(100% - 20px);
+    }
+
+    .user-info h2 {
+        font-size: 12px;
+    }
+
+    .location-details .city {
+        font-size: 18px;
+    }
+
+    .location-details .time {
+        font-size: 24px;
+    }
+
+    #displayTitle {
+        font-size: 32px;
+    }
+
+    .destination-city {
+        font-size: 48px;
+    }
+
+    .destination-time {
+        font-size: 36px;
+    }
+
+    .destination-timezone {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #displayTitle {
+        font-size: 24px;
+    }
+
+    .destination-city {
+        font-size: 36px;
+    }
+
+    .destination-time {
+        font-size: 28px;
+    }
+}

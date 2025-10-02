@@ -145,6 +145,46 @@ body {
     opacity: 1;
 }
 
+/* Credits Section */
+.credits {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    max-width: 500px;
+}
+
+.credits p {
+    margin-bottom: 5px;
+}
+
+.credits p:last-child {
+    margin-bottom: 0;
+}
+
+.credits a {
+    color: #4A9EFF;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.credits a:hover {
+    color: #7AB8FF;
+}
+
+.credits .prompt {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .user-info {
